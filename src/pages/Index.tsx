@@ -20,64 +20,64 @@ const Index = () => {
   };
 
   const topGifts = [
-    { id: 1, name: 'Умные часы Apple Watch', category: 'Технологии', price: '35 000 ₽', match: '95%' },
-    { id: 2, name: 'Набор для кофе гурмана', category: 'Хобби', price: '8 500 ₽', match: '92%' },
-    { id: 3, name: 'Мастер-класс по живописи', category: 'Впечатления', price: '5 000 ₽', match: '88%' }
+    { id: 1, name: 'Apple Watch', category: 'Technology', price: '$450', match: '95%' },
+    { id: 2, name: 'Premium Coffee Set', category: 'Hobby', price: '$110', match: '92%' },
+    { id: 3, name: 'Painting Masterclass', category: 'Experience', price: '$65', match: '88%' }
   ];
 
   const features = [
     {
       icon: 'Sparkles',
-      title: 'Персонализация на новом уровне',
-      description: 'Анализирует интересы, хобби, стиль жизни человека для создания уникальных презентов'
+      title: 'Next-Level Personalization',
+      description: 'Analyzes interests, hobbies, and lifestyle to create unique and thoughtful gifts'
     },
     {
       icon: 'Clock',
-      title: 'Экономия времени и сил',
-      description: 'Мгновенная обработка множества вариантов. Избавление от бесконечного поиска'
+      title: 'Save Time & Effort',
+      description: 'Instant processing of countless options. No more endless searching online'
     },
     {
       icon: 'Brain',
-      title: 'Умный анализ данных',
-      description: 'Учет возраста, пола, отношений, сезонности и бюджета для идеального результата'
+      title: 'Smart Data Analysis',
+      description: 'Considers age, gender, relationships, seasonality, and budget for perfect results'
     },
     {
       icon: 'Lightbulb',
-      title: 'Креативные решения',
-      description: 'Неочевидные и оригинальные идеи. Сочетания несочетаемого'
+      title: 'Creative Solutions',
+      description: 'Unexpected and original ideas. Unique combinations you never thought of'
     },
     {
       icon: 'ShoppingBag',
-      title: 'Практичность',
-      description: 'Рекомендации проверенных магазинов и брендов с сравнением цен'
+      title: 'Practical Recommendations',
+      description: 'Trusted stores and brands with price comparisons'
     },
     {
       icon: 'Target',
-      title: 'Решение сложных задач',
-      description: 'Подарки для людей, у которых "все есть" или для малознакомых людей'
+      title: 'Solve Complex Challenges',
+      description: 'Gifts for people who "have everything" or for those you barely know'
     }
   ];
 
   const pricing = [
     {
-      name: 'Базовый',
-      price: '0 ₽',
-      period: 'бесплатно',
-      features: ['3 подбора в месяц', 'Базовые рекомендации', 'Доступ к каталогу'],
+      name: 'Basic',
+      price: '$0',
+      period: 'free',
+      features: ['3 gift searches per month', 'Basic recommendations', 'Catalog access'],
       popular: false
     },
     {
-      name: 'Премиум',
-      price: '990 ₽',
-      period: 'в месяц',
-      features: ['Безлимитные подборы', 'AI-персонализация', 'Приоритетная поддержка', 'Скидки у партнеров'],
+      name: 'Premium',
+      price: '$12',
+      period: 'per month',
+      features: ['Unlimited searches', 'AI personalization', 'Priority support', 'Partner discounts'],
       popular: true
     },
     {
-      name: 'Бизнес',
-      price: 'От 5 000 ₽',
-      period: 'в месяц',
-      features: ['Корпоративные подборы', 'API интеграция', 'Персональный менеджер', 'Аналитика и отчеты'],
+      name: 'Business',
+      price: 'From $60',
+      period: 'per month',
+      features: ['Corporate gift solutions', 'API integration', 'Personal manager', 'Analytics & reports'],
       popular: false
     }
   ];
@@ -96,9 +96,9 @@ const Index = () => {
               </span>
             </div>
             <nav className="hidden md:flex gap-8">
-              <a href="#how" className="text-slate-700 hover:text-primary transition-colors">Как это работает</a>
-              <a href="#features" className="text-slate-700 hover:text-primary transition-colors">Преимущества</a>
-              <a href="#pricing" className="text-slate-700 hover:text-primary transition-colors">Тарифы</a>
+              <a href="#how" className="text-slate-700 hover:text-primary transition-colors">How It Works</a>
+              <a href="#features" className="text-slate-700 hover:text-primary transition-colors">Features</a>
+              <a href="#pricing" className="text-slate-700 hover:text-primary transition-colors">Pricing</a>
             </nav>
             <div className="flex gap-2">
               <Button variant="ghost" size="icon">
@@ -118,64 +118,64 @@ const Index = () => {
             ✨ Powered by AI
           </Badge>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-primary to-accent bg-clip-text text-transparent">
-            Идеальный подарок за минуту
+            Perfect Gift in Minutes
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Искусственный интеллект анализирует предпочтения и находит уникальные подарки, 
-            которые точно порадуют получателя
+            Artificial intelligence analyzes preferences and finds unique gifts 
+            that will definitely delight the recipient
           </p>
         </div>
 
         <Card className="max-w-2xl mx-auto shadow-2xl border-purple-100 animate-scale-in">
           <CardHeader className="bg-gradient-to-r from-primary/5 to-accent/5">
-            <CardTitle className="text-2xl">Попробуйте AI прямо сейчас</CardTitle>
-            <CardDescription>Заполните анкету и получите персональные рекомендации</CardDescription>
+            <CardTitle className="text-2xl">Try AI Right Now</CardTitle>
+            <CardDescription>Fill out the form and get personalized recommendations</CardDescription>
           </CardHeader>
           <CardContent className="pt-6">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
-                <Label htmlFor="recipient">Кто получатель?</Label>
+                <Label htmlFor="recipient">Who is the recipient?</Label>
                 <Select value={formData.recipient} onValueChange={(value) => setFormData({...formData, recipient: value})}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Выберите..." />
+                    <SelectValue placeholder="Select..." />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="friend">Друг/Подруга</SelectItem>
-                    <SelectItem value="partner">Партнер/Супруг</SelectItem>
-                    <SelectItem value="parent">Родитель</SelectItem>
-                    <SelectItem value="colleague">Коллега</SelectItem>
-                    <SelectItem value="child">Ребенок</SelectItem>
+                    <SelectItem value="friend">Friend</SelectItem>
+                    <SelectItem value="partner">Partner/Spouse</SelectItem>
+                    <SelectItem value="parent">Parent</SelectItem>
+                    <SelectItem value="colleague">Colleague</SelectItem>
+                    <SelectItem value="child">Child</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="occasion">По какому поводу?</Label>
+                <Label htmlFor="occasion">What's the occasion?</Label>
                 <Select value={formData.occasion} onValueChange={(value) => setFormData({...formData, occasion: value})}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Выберите повод..." />
+                    <SelectValue placeholder="Select occasion..." />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="birthday">День рождения</SelectItem>
-                    <SelectItem value="newyear">Новый год</SelectItem>
-                    <SelectItem value="wedding">Свадьба</SelectItem>
-                    <SelectItem value="anniversary">Годовщина</SelectItem>
-                    <SelectItem value="just">Просто так</SelectItem>
+                    <SelectItem value="birthday">Birthday</SelectItem>
+                    <SelectItem value="newyear">New Year</SelectItem>
+                    <SelectItem value="wedding">Wedding</SelectItem>
+                    <SelectItem value="anniversary">Anniversary</SelectItem>
+                    <SelectItem value="just">Just Because</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="budget">Бюджет</Label>
+                <Label htmlFor="budget">Budget</Label>
                 <Select value={formData.budget} onValueChange={(value) => setFormData({...formData, budget: value})}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Выберите бюджет..." />
+                    <SelectValue placeholder="Select budget..." />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="low">До 3 000 ₽</SelectItem>
-                    <SelectItem value="medium">3 000 - 10 000 ₽</SelectItem>
-                    <SelectItem value="high">10 000 - 30 000 ₽</SelectItem>
-                    <SelectItem value="premium">Более 30 000 ₽</SelectItem>
+                    <SelectItem value="low">Up to $40</SelectItem>
+                    <SelectItem value="medium">$40 - $130</SelectItem>
+                    <SelectItem value="high">$130 - $400</SelectItem>
+                    <SelectItem value="premium">More than $400</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -186,7 +186,7 @@ const Index = () => {
                 size="lg"
               >
                 <Icon name="Sparkles" className="mr-2" size={20} />
-                Подобрать подарок
+                Find Perfect Gift
               </Button>
             </form>
 
@@ -194,10 +194,10 @@ const Index = () => {
               <div className="mt-6 p-4 bg-gradient-to-r from-primary/5 to-accent/5 rounded-lg animate-fade-in">
                 <div className="flex items-center gap-2 mb-2">
                   <Icon name="CheckCircle2" className="text-green-600" size={20} />
-                  <span className="font-semibold text-slate-900">AI анализирует ваш запрос...</span>
+                  <span className="font-semibold text-slate-900">AI is analyzing your request...</span>
                 </div>
                 <p className="text-sm text-slate-600">
-                  Найдено 47 идеальных вариантов! Зарегистрируйтесь, чтобы увидеть все рекомендации.
+                  Found 47 perfect options! Sign up to see all recommendations.
                 </p>
               </div>
             )}
@@ -207,8 +207,8 @@ const Index = () => {
 
       <section className="container mx-auto px-4 py-16 bg-white/50 backdrop-blur-sm">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">🔥 Топ подарков недели</h2>
-          <p className="text-slate-600">AI-рекомендации, которые выбирают чаще всего</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">🔥 Top Gifts This Week</h2>
+          <p className="text-slate-600">AI recommendations that people choose most often</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -218,7 +218,7 @@ const Index = () => {
                 <div className="flex justify-between items-start mb-2">
                   <Badge variant="secondary">{gift.category}</Badge>
                   <Badge className="bg-gradient-to-r from-primary to-accent text-white">
-                    {gift.match} совпадение
+                    {gift.match} match
                   </Badge>
                 </div>
                 <CardTitle className="text-lg">{gift.name}</CardTitle>
@@ -227,7 +227,7 @@ const Index = () => {
                 <div className="flex justify-between items-center">
                   <span className="text-2xl font-bold text-primary">{gift.price}</span>
                   <Button size="sm" variant="outline">
-                    Подробнее
+                    Details
                     <Icon name="ArrowRight" className="ml-2" size={16} />
                   </Button>
                 </div>
@@ -239,9 +239,9 @@ const Index = () => {
 
       <section id="features" className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Почему выбирают DreamGift AI?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose DreamGift AI?</h2>
           <p className="text-slate-600 max-w-2xl mx-auto">
-            Наша технология превращает сложный процесс выбора подарка в увлекательное путешествие
+            Our technology transforms the complex gift selection process into an exciting journey
           </p>
         </div>
 
@@ -267,8 +267,8 @@ const Index = () => {
 
       <section id="pricing" className="container mx-auto px-4 py-16 bg-white/50 backdrop-blur-sm">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Тарифы для любых задач</h2>
-          <p className="text-slate-600">Выберите оптимальный план для себя или бизнеса</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Plans for Every Need</h2>
+          <p className="text-slate-600">Choose the optimal plan for yourself or your business</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -280,7 +280,7 @@ const Index = () => {
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2">
                   <Badge className="bg-gradient-to-r from-primary to-accent text-white">
-                    Популярный
+                    Most Popular
                   </Badge>
                 </div>
               )}
@@ -304,7 +304,7 @@ const Index = () => {
                   className={`w-full ${plan.popular ? 'bg-gradient-to-r from-primary to-accent text-white' : ''}`}
                   variant={plan.popular ? 'default' : 'outline'}
                 >
-                  Выбрать тариф
+                  Choose Plan
                 </Button>
               </CardContent>
             </Card>
@@ -314,14 +314,14 @@ const Index = () => {
 
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Наши партнеры</h2>
-          <p className="text-slate-600">Интеграция с крупнейшими маркетплейсами России</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Partners</h2>
+          <p className="text-slate-600">Integration with leading online retailers</p>
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-12 max-w-4xl mx-auto opacity-60">
-          <div className="text-3xl font-bold text-slate-700">Wildberries</div>
-          <div className="text-3xl font-bold text-slate-700">OZON</div>
-          <div className="text-3xl font-bold text-slate-700">Яндекс.Маркет</div>
+          <div className="text-3xl font-bold text-slate-700">Amazon</div>
+          <div className="text-3xl font-bold text-slate-700">Etsy</div>
+          <div className="text-3xl font-bold text-slate-700">eBay</div>
         </div>
       </section>
 
@@ -336,33 +336,33 @@ const Index = () => {
                 <span className="text-xl font-bold">DreamGift AI</span>
               </div>
               <p className="text-slate-400 text-sm">
-                Искусственный интеллект для подбора идеальных подарков
+                Artificial intelligence for finding perfect gifts
               </p>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Компания</h4>
+              <h4 className="font-semibold mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li><a href="#" className="hover:text-white transition-colors">О нас</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Блог</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Партнеры</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Partners</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Поддержка</h4>
+              <h4 className="font-semibold mb-4">Support</h4>
               <ul className="space-y-2 text-sm text-slate-400">
                 <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Контакты</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold mb-4">Контакты</h4>
+              <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-slate-400">
                 <li className="flex items-center gap-2">
                   <Icon name="MapPin" size={16} />
-                  г. Челябинск, ул. Горького 34
+                  Chelyabinsk, Gorky St. 34
                 </li>
                 <li className="flex items-center gap-2">
                   <Icon name="Phone" size={16} />
@@ -377,7 +377,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-slate-700 pt-8 text-center text-sm text-slate-400">
-            <p>© 2024 DreamGift AI. Все права защищены.</p>
+            <p>© 2024 DreamGift AI. All rights reserved.</p>
           </div>
         </div>
       </footer>
